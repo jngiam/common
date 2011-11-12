@@ -1,1 +1,8 @@
 Common useful functions
+
+
+computeNumericalGradient.m
+displayData.m
+l2rowg.m
+l2row.m
+
