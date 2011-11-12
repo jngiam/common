@@ -3,6 +3,7 @@ Common useful functions
 
 computeNumericalGradient.m
 displayData.m
+getPoolingMatrix.m
 l2rowg.m
 l2row.m
 
