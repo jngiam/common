@@ -1,6 +1,5 @@
-function [y] = l2row(x)
-    normeps = 1e-8;
-    epssumsq = sum(x.^2, 2) + normeps;
-    l2rows = sqrt(epssumsq);
-    y = bsxfun(@rdivide, x, l2rows);
+function [Y,N] = l2row(X) % L2 Normalize X by rows
+    % We also use this to normalize by column with l2row(X')
+    N = sqrt(sum(X.^2,2) + 1e-8);
+    Y = bsxfun(@rdivide,X,N);
 end
